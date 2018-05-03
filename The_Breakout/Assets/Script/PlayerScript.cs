@@ -10,9 +10,9 @@ public class PlayerScript : MonoBehaviour {
 	public bool moveLeft = false;
 	public bool moveRight = false;
 	// Use this for initialization
-	void Start () 
+	void Awake () //resets the game when either UI pops out and buttons were pressed
 	{
-		
+		Time.timeScale = 1;
 	}
 	
 	// Update is called once per frame
